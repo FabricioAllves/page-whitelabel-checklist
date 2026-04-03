@@ -10,7 +10,7 @@ const testimonials = [
     role: "Gerente de Operações",
     company: "Energisa Distribuição",
     avatar: "CM",
-    avatarColor: "#f4b860",
+    avatarColor: "#16a34a",
   },
   {
     quote:
@@ -19,7 +19,7 @@ const testimonials = [
     role: "Diretora de Tecnologia",
     company: "Sanepar Infraestrutura",
     avatar: "RO",
-    avatarColor: "#5eead4",
+    avatarColor: "#15803d",
   },
   {
     quote:
@@ -28,7 +28,7 @@ const testimonials = [
     role: "Supervisor de Campo",
     company: "Copel Engenharia",
     avatar: "FR",
-    avatarColor: "#6ea8fe",
+    avatarColor: "#166534",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Testimonials() {
             Credibilidade
           </motion.p>
           <motion.h2
-            className="mb-4 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl"
+            className="mb-4 text-4xl font-semibold tracking-[-0.04em] text-[#0f172a] sm:text-5xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -60,27 +60,27 @@ export default function Testimonials() {
           {testimonials.map((testimonial, i) => (
             <motion.div
               key={testimonial.name}
-              className="panel-dark flex flex-col rounded-[30px] p-8"
+              className="panel-light flex flex-col rounded-[30px] p-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
               whileHover={{ y: -4 }}
             >
-              <div className="mb-5 text-5xl leading-none" style={{ color: `${testimonial.avatarColor}55` }}>
+              <div className="mb-5 text-4xl leading-none" style={{ color: `${testimonial.avatarColor}55` }}>
                 &ldquo;
               </div>
-              <p className="mb-6 flex-1 text-sm leading-7 text-[#cbd7e7]">{testimonial.quote}</p>
+              <p className="mb-6 flex-1 text-sm leading-7 text-[#44546c]">{testimonial.quote}</p>
               <div className="flex items-center gap-3">
                 <div
-                  className="flex h-11 w-11 items-center justify-center rounded-2xl text-xs font-bold text-[#08111d]"
-                  style={{ background: testimonial.avatarColor }}
+                  className="flex h-11 w-11 items-center justify-center rounded-2xl text-xs font-bold text-white"
+                  style={{ background: `linear-gradient(135deg, ${testimonial.avatarColor}, #4ade80)` }}
                 >
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-white">{testimonial.name}</p>
-                  <p className="text-xs text-[#93a4c4]">
+                  <p className="text-sm font-bold text-[#0f172a]">{testimonial.name}</p>
+                  <p className="text-xs text-[#6b7b91]">
                     {testimonial.role} · {testimonial.company}
                   </p>
                 </div>

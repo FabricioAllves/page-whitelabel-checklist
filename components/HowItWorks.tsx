@@ -48,7 +48,7 @@ export default function HowItWorks() {
             Fluxo operacional
           </motion.p>
           <motion.h2
-            className="mb-4 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl"
+            className="mb-4 text-4xl font-semibold tracking-[-0.04em] text-[#0f172a] sm:text-5xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -57,7 +57,7 @@ export default function HowItWorks() {
             Da configuracao ao insight, sem quebrar o ritmo da equipe
           </motion.h2>
           <motion.p
-            className="mx-auto max-w-2xl text-[17px] leading-8 text-[#9dafcb]"
+            className="mx-auto max-w-2xl text-[17px] leading-8 text-[#55657e]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -104,10 +104,10 @@ export default function HowItWorks() {
                 <div className="mb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#f4b860]">
                   Passo {step.number}
                 </div>
-                <h3 className="mb-3 text-xl font-semibold text-white">{step.title}</h3>
-                <p className="max-w-[230px] text-sm leading-7 text-[#9dafcb]">{step.description}</p>
+                <h3 className="mb-3 text-xl font-semibold text-[#0f172a]">{step.title}</h3>
+                <p className="max-w-[230px] text-sm leading-7 text-[#55657e]">{step.description}</p>
 
-                {i < steps.length - 1 && <div className="mt-4 text-2xl text-white/20 lg:hidden">↓</div>}
+                {i < steps.length - 1 && <div className="mt-4 text-2xl text-slate-300 lg:hidden">↓</div>}
               </motion.div>
             ))}
           </div>

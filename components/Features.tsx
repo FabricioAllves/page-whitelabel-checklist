@@ -8,7 +8,7 @@ const features = [
     title: "Offline como requisito, nao como detalhe",
     description:
       "A equipe executa sem depender de rede. Quando o sinal reaparece, a sincronizacao acontece sem ruído operacional.",
-    accent: "#5eead4",
+    accent: "#16a34a",
   },
   {
     eyebrow: "02",
@@ -22,42 +22,42 @@ const features = [
     title: "Checklists que orientam execucao de verdade",
     description:
       "Campos condicionais, foto, GPS, assinatura e validacoes para reduzir erro humano e padronizar a operacao.",
-    accent: "#6ea8fe",
+    accent: "#15803d",
   },
   {
     eyebrow: "04",
     title: "Visibilidade executiva em tempo real",
     description:
       "Gestores deixam de esperar planilhas no fim do dia e passam a enxergar status, risco e produtividade em tempo real.",
-    accent: "#8b5cf6",
+    accent: "#166534",
   },
   {
     eyebrow: "05",
     title: "Controle fino de acesso por perfil",
     description:
       "Admin, gestor, tecnico e auditor enxergam apenas o que precisam, com governanca mais clara e menos risco de operacao.",
-    accent: "#ff7a59",
+    accent: "#4ade80",
   },
   {
     eyebrow: "06",
     title: "Sincronizacao resiliente entre campo e central",
     description:
       "Fluxo bidirecional de dados com menos retrabalho, menos conflito e mais confianca no que chega ao dashboard.",
-    accent: "#34d399",
+    accent: "#22c55e",
   },
   {
     eyebrow: "07",
     title: "CAPA — Acoes Corretivas e Preventivas",
     description:
       "Nao conformidades viram planos de acao rastreavies com responsavel, prazo e evidencia de resolucao. Ciclo fechado sem e-mail nem planilha.",
-    accent: "#f43f5e",
+    accent: "#0f766e",
   },
   {
     eyebrow: "08",
     title: "Assinatura digital e evidencia juridica",
     description:
       "Tecnico, supervisor e cliente assinam diretamente no app. O registro fica vinculado ao checklist com timestamp, GPS e hash de integridade.",
-    accent: "#a78bfa",
+    accent: "#059669",
   },
 ];
 

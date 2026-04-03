@@ -9,7 +9,7 @@ export default function LogoStrip() {
     <section className="section-divider section-dark py-14">
       <div className="shell px-4 sm:px-6">
         <motion.p
-          className="mb-8 text-center text-xs font-semibold uppercase tracking-[0.24em] text-[#7083a3]"
+          className="mb-8 text-center text-xs font-semibold uppercase tracking-[0.24em] text-[#55657e]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -27,13 +27,13 @@ export default function LogoStrip() {
           {companies.map((company, i) => (
             <motion.div
               key={company}
-              className="group rounded-full border border-white/10 bg-white/5 px-6 py-3 backdrop-blur-xl"
+              className="group rounded-full border border-emerald-900/10 bg-white px-6 py-3 backdrop-blur-xl"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
             >
-              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#93a4c4] group-hover:text-white">
+              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#44546c] group-hover:text-[#166534]">
                 {company}
               </span>
             </motion.div>

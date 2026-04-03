@@ -10,10 +10,10 @@ import {
 import { useEffect, useRef } from "react";
 
 const stats = [
-  { value: 500, prefix: "+", suffix: "", label: "tecnicos ativos", description: "rodando tarefas diariamente", color: "#f4b860" },
+  { value: 500, prefix: "+", suffix: "", label: "tecnicos ativos", description: "rodando tarefas diariamente", color: "#16a34a" },
   { value: 99.9, prefix: "", suffix: "%", label: "disponibilidade offline", description: "mesmo em operacoes sem cobertura", color: "#5eead4" },
-  { value: 2, prefix: "< ", suffix: "s", label: "tempo de sincronizacao", description: "quando a conectividade retorna", color: "#6ea8fe" },
-  { value: 100, prefix: "", suffix: "%", label: "branding por tenant", description: "para produto white label serio", color: "#ff7a59" },
+  { value: 2, prefix: "< ", suffix: "s", label: "tempo de sincronizacao", description: "quando a conectividade retorna", color: "#15803d" },
+  { value: 100, prefix: "", suffix: "%", label: "branding por tenant", description: "para produto white label serio", color: "#166534" },
 ];
 
 function AnimatedNumber({
