@@ -45,6 +45,20 @@ const features = [
       "Fluxo bidirecional de dados com menos retrabalho, menos conflito e mais confianca no que chega ao dashboard.",
     accent: "#34d399",
   },
+  {
+    eyebrow: "07",
+    title: "CAPA — Acoes Corretivas e Preventivas",
+    description:
+      "Nao conformidades viram planos de acao rastreavies com responsavel, prazo e evidencia de resolucao. Ciclo fechado sem e-mail nem planilha.",
+    accent: "#f43f5e",
+  },
+  {
+    eyebrow: "08",
+    title: "Assinatura digital e evidencia juridica",
+    description:
+      "Tecnico, supervisor e cliente assinam diretamente no app. O registro fica vinculado ao checklist com timestamp, GPS e hash de integridade.",
+    accent: "#a78bfa",
+  },
 ];
 
 export default function Features() {
