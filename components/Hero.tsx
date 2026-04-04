@@ -52,7 +52,12 @@ export default function Hero() {
           }}
           transition={{
             opacity: { repeat: Infinity, duration: 4, delay: item.delay },
-            y: { repeat: Infinity, duration: 4, delay: item.delay, ease: "easeInOut" },
+            y: {
+              repeat: Infinity,
+              duration: 4,
+              delay: item.delay,
+              ease: "easeInOut",
+            },
           }}
         >
           {item.label}
@@ -65,7 +70,6 @@ export default function Hero() {
       <div className="relative z-10 flex flex-1 items-center py-12 sm:py-20 lg:py-28">
         <div className="shell px-4 sm:px-6">
           <div className="hero-layout grid items-center gap-10 xl:gap-14 lg:grid-cols-[minmax(0,0.98fr)_minmax(340px,0.74fr)]">
-
             {/* LEFT — copy */}
             <div className="hero-copy max-w-[43rem]">
               <motion.div
@@ -85,7 +89,9 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
                 Gestao de campo
-                <span className="block gradient-text">mais clara e profissional.</span>
+                <span className="block gradient-text">
+                  mais clara e profissional.
+                </span>
               </motion.h1>
 
               <motion.p
@@ -94,7 +100,9 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Checklists offline-first, aplicativo whitelabel e acompanhamento em tempo real para equipes que precisam operar bem no campo e transmitir mais confianca para clientes e gestores.
+                Checklists offline-first, aplicativo whitelabel e acompanhamento
+                em tempo real para equipes que precisam operar bem no campo e
+                transmitir mais confianca para clientes e gestores.
               </motion.p>
 
               {/* Stats antes dos CTAs */}
@@ -105,25 +113,37 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 {trustBadges.map((badge) => (
-                  <div key={badge.label} className="panel-dark hero-stat-card rounded-[24px] p-4 sm:p-5">
-                    <div className="text-[1.7rem] font-semibold text-[#166534] sm:text-[1.85rem]">{badge.value}</div>
-                    <p className="mt-1.5 text-sm leading-6 text-[#5f7469]">{badge.label}</p>
+                  <div
+                    key={badge.label}
+                    className="panel-dark hero-stat-card rounded-[24px] p-4 sm:p-5"
+                  >
+                    <div className="text-[1.7rem] font-semibold text-[#166534] sm:text-[1.85rem]">
+                      {badge.value}
+                    </div>
+                    <p className="mt-1.5 text-sm leading-6 text-[#5f7469]">
+                      {badge.label}
+                    </p>
                   </div>
                 ))}
               </motion.div>
 
-              {/* CTAs abaixo dos stats */}
               <motion.div
                 className="hero-actions mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center"
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.45 }}
               >
-                <a href="#pricing" className="primary-button w-full text-base sm:w-auto">
+                <a
+                  href="#pricing"
+                  className="primary-button w-full text-base sm:w-auto"
+                >
                   Solicitar demo guiada
                   <span aria-hidden="true">→</span>
                 </a>
-                <a href="#how-it-works" className="secondary-button w-full text-base sm:w-auto">
+                <a
+                  href="#how-it-works"
+                  className="secondary-button w-full text-base sm:w-auto"
+                >
                   Ver experiencia de uso
                 </a>
               </motion.div>
@@ -138,7 +158,6 @@ export default function Hero() {
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.08),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(134,239,172,0.10),transparent_26%)]" />
               <div className="relative">
-
                 {/* Header do card */}
                 <div className="mb-4 flex items-center justify-between gap-3 sm:mb-5">
                   <div>
@@ -146,14 +165,18 @@ export default function Hero() {
                     <h2 className="mt-1.5 max-w-[12ch] text-[1.15rem] font-semibold leading-tight text-[#0f172a] sm:text-[1.35rem]">
                       Checklist de Inspecao
                     </h2>
-                    <p className="mt-0.5 text-[11px] text-[#6b7f73] sm:text-xs">Tecnico: Rafael Souza · Unidade Norte</p>
+                    <p className="mt-0.5 text-[11px] text-[#6b7f73] sm:text-xs">
+                      Tecnico: Rafael Souza · Unidade Norte
+                    </p>
                   </div>
                   <div className="flex flex-col items-end gap-2">
                     <div className="flex items-center gap-1.5 rounded-full border border-[#22c55e]/20 bg-[#22c55e]/10 px-2.5 py-1 text-[10px] font-semibold tracking-[0.12em] text-[#15803d] uppercase sm:px-3 sm:text-[11px] sm:tracking-[0.14em]">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#22c55e] shadow-[0_0_6px_#22c55e]" />
                       offline
                     </div>
-                    <p className="text-[10px] text-[#6b7f73]">sem sinal — 3 itens salvos</p>
+                    <p className="text-[10px] text-[#6b7f73]">
+                      sem sinal — 3 itens salvos
+                    </p>
                   </div>
                 </div>
 
@@ -161,15 +184,23 @@ export default function Hero() {
                 <div className="mb-4 sm:mb-5">
                   <div className="mb-2 flex items-center justify-between text-xs text-[#6b7f73]">
                     <span>Progresso</span>
-                    <span className="font-semibold text-[#0f172a]">3 / 5 itens</span>
+                    <span className="font-semibold text-[#0f172a]">
+                      3 / 5 itens
+                    </span>
                   </div>
                   <div className="h-2 rounded-full bg-emerald-100/70">
                     <motion.div
                       className="h-2 rounded-full"
-                      style={{ background: "linear-gradient(90deg, #22c55e, #16a34a)" }}
+                      style={{
+                        background: "linear-gradient(90deg, #22c55e, #16a34a)",
+                      }}
                       initial={{ width: 0 }}
                       animate={{ width: "60%" }}
-                      transition={{ duration: 1.1, delay: 0.6, ease: "easeOut" }}
+                      transition={{
+                        duration: 1.1,
+                        delay: 0.6,
+                        ease: "easeOut",
+                      }}
                     />
                   </div>
                 </div>
@@ -197,7 +228,13 @@ export default function Hero() {
                       >
                         {item.done ? "✓" : ""}
                       </div>
-                      <span className={item.done ? "text-[#163126]" : "text-[#6b7f73]"}>{item.label}</span>
+                      <span
+                        className={
+                          item.done ? "text-[#163126]" : "text-[#6b7f73]"
+                        }
+                      >
+                        {item.label}
+                      </span>
                     </motion.div>
                   ))}
                 </div>
@@ -205,8 +242,18 @@ export default function Hero() {
                 {/* Footer — sync status */}
                 <div className="mt-4 flex items-center justify-between rounded-2xl border border-[#22c55e]/18 bg-[#22c55e]/[0.08] px-3.5 py-3 sm:mt-5 sm:px-4">
                   <div className="flex items-center gap-2 text-[11px] leading-5 text-[#15803d] sm:text-xs">
-                    <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    <svg
+                      className="h-3.5 w-3.5 shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                      />
                     </svg>
                     Sincronizara automaticamente ao recuperar sinal
                   </div>
@@ -214,10 +261,8 @@ export default function Hero() {
                     pendente
                   </span>
                 </div>
-
               </div>
             </motion.div>
-
           </div>
         </div>
       </div>
