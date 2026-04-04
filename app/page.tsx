@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import LogoStrip from "@/components/LogoStrip";
+import Problem from "@/components/Problem";
 import Features from "@/components/Features";
 import Sectors from "@/components/Sectors";
 import HowItWorks from "@/components/HowItWorks";
@@ -19,10 +20,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <LogoStrip />
+      <Problem />
       <Features />
-      <Sectors />
       <HowItWorks />
       <PhoneMockup />
+      <Sectors />
       <RolesBenefits />
       <Stats />
       <Testimonials />

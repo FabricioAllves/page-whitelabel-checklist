@@ -15,7 +15,7 @@ export default function LogoStrip() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Operacoes de campo em energia, saneamento e infraestrutura
+          Empresas que confiam no CheckField para controlar suas operacoes de campo
         </motion.p>
         <motion.div
           className="flex flex-wrap items-center justify-center gap-3"

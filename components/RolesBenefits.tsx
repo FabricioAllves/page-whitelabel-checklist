@@ -5,63 +5,63 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const roles = [
   {
-    id: "admin",
-    emoji: "◌",
-    title: "Admin",
-    tagline: "Orquestra a operacao e a identidade do produto",
+    id: "gestor",
+    emoji: "△",
+    title: "Gestor Operacional",
+    tagline: "Visibilidade total da operacao sem esperar relatorio",
     color: "#16a34a",
     benefits: [
-      "Configura templates, tenants e fluxos de aprovacao",
-      "Gerencia usuarios e permissoes sem depender de deploy",
-      "Personaliza branding por cliente com acabamento white label",
-      "Consolida dados para compliance, BI e auditoria",
-      "Cria padroes operacionais reutilizaveis entre equipes",
-      "Define a governanca de rollout e atualizacao",
+      "Distribui tarefas e monitora progresso por regiao em tempo real",
+      "Recebe alertas automaticos de nao conformidade e desvios",
+      "Visualiza indicadores operacionais sem depender de planilha",
+      "Identifica gargalos e riscos antes de virarem incidentes",
+      "Compara desempenho entre equipes, tecnicos e periodos",
+      "Toma decisoes com base em dados — nao em relatos verbais",
     ],
   },
   {
-    id: "gestor",
-    emoji: "△",
-    title: "Gestor",
-    tagline: "Transforma execucao de campo em decisao em tempo real",
+    id: "admin",
+    emoji: "◌",
+    title: "Gestor de Qualidade",
+    tagline: "Define padroes e garante que sejam seguidos",
     color: "#15803d",
     benefits: [
-      "Distribui tarefas e acompanha progresso por regiao",
-      "Recebe alertas de nao conformidade e gargalos",
-      "Visualiza indicadores operacionais sem esperar planilha",
-      "Aprova checklists e evidencias com mais contexto",
-      "Compara times, tecnicos e janelas de atendimento",
-      "Escala processos com visibilidade centralizada",
+      "Configura checklists, criterios de validacao e fluxos de aprovacao",
+      "Gerencia usuarios e permissoes por equipe ou regiao",
+      "Consolida dados para compliance, auditorias e certificacoes",
+      "Cria padroes operacionais reutilizaveis entre equipes",
+      "Acompanha historico de nao conformidades e acoes corretivas",
+      "Gera relatorios para orgaos reguladores sem esforco manual",
     ],
   },
   {
     id: "tecnico",
     emoji: "□",
-    title: "Tecnico",
-    tagline: "Opera com clareza, mesmo em ambientes de alta pressao",
+    title: "Tecnico de Campo",
+    tagline: "Executa com clareza e registra evidencias em qualquer ambiente",
     color: "#166534",
     benefits: [
-      "Recebe tarefas offline com contexto e prioridade visual",
-      "Preenche checklist com foto, GPS e assinatura",
-      "Segue fluxo guiado para reduzir erro operacional",
-      "Consulta historico e recorrencias sem retrabalho",
+      "Recebe tarefas com instrucoes claras e prioridade visual",
+      "Preenche checklist com foto, GPS e assinatura digital",
+      "Segue fluxo guiado que reduz margem para erro operacional",
+      "Opera normalmente mesmo sem sinal de internet",
       "Sincroniza automaticamente quando a conexao volta",
-      "Mantem produtividade mesmo em area remota",
+      "Consulta historico de servicos anteriores no mesmo local",
     ],
   },
   {
     id: "viewer",
     emoji: "◇",
-    title: "Auditoria",
-    tagline: "Acompanha sem interferir na execucao",
-    color: "#4ade80",
+    title: "Auditor",
+    tagline: "Acessa evidencias e historico sem depender de ninguem",
+    color: "#0f766e",
     benefits: [
-      "Consulta resultados em modo somente leitura",
-      "Acessa trilha de evidencias com rastreabilidade",
-      "Visualiza o dashboard com filtros e historico",
-      "Exporta relatorios para compliance e cliente final",
-      "Reduz dependencias de status informal por mensagem",
-      "Ganha transparencia sem comprometer governanca",
+      "Consulta registros completos em modo somente leitura",
+      "Acessa trilha de evidencias com foto, GPS e timestamp",
+      "Filtra historico por equipe, tecnico, periodo ou regiao",
+      "Exporta relatorios estruturados para compliance e cliente final",
+      "Verifica conformidade com padroes regulatorios sem reuniao",
+      "Identifica padroes de falha recorrentes com dados historicos",
     ],
   },
 ];
@@ -80,7 +80,7 @@ export default function RolesBenefits() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            Perfis e governanca
+            Beneficios por perfil
           </motion.p>
           <motion.h2
             className="mb-4 text-4xl font-semibold tracking-[-0.04em] text-[#0f172a] sm:text-5xl"
@@ -89,7 +89,8 @@ export default function RolesBenefits() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Cada camada da operacao enxerga exatamente o que precisa
+            Cada perfil ganha{" "}
+            <span className="gradient-text">controle sobre o que importa</span>
           </motion.h2>
           <motion.p
             className="mx-auto max-w-2xl text-[17px] leading-8 text-[#55657e]"
@@ -98,7 +99,8 @@ export default function RolesBenefits() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            O produto fica mais profissional quando permissao, contexto e experiencia andam juntos. Aqui isso nao e detalhe de backlog.
+            Do tecnico em campo ao auditor externo, o sistema entrega o nivel certo
+            de visibilidade e controle para cada responsabilidade.
           </motion.p>
         </div>
 

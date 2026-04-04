@@ -14,9 +14,9 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "Funcionalidades", href: "#features" },
     { label: "Como Funciona", href: "#how-it-works" },
-    { label: "Preços", href: "#pricing" },
+    { label: "Diferenciais", href: "#features" },
+    { label: "Planos", href: "#pricing" },
   ];
 
   return (

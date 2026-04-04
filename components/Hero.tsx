@@ -3,23 +3,23 @@
 import { motion } from "framer-motion";
 
 const orbitBadges = [
-  { label: "Offline sem friccao", top: "18%", left: "5%", delay: 0 },
-  { label: "White label operacional", top: "28%", right: "6%", delay: 0.3 },
-  { label: "Sincronizacao resiliente", top: "72%", left: "7%", delay: 0.6 },
-  { label: "Dashboards em tempo real", top: "62%", right: "8%", delay: 0.9 },
+  { label: "Validacao automatica de execucao", top: "18%", left: "5%", delay: 0 },
+  { label: "Auditoria em tempo real", top: "28%", right: "6%", delay: 0.3 },
+  { label: "Registro com foto e localizacao", top: "72%", left: "7%", delay: 0.6 },
+  { label: "Alertas de inconsistencia", top: "62%", right: "8%", delay: 0.9 },
 ];
 
 const trustBadges = [
-  { value: "24h", label: "para liberar um piloto funcional" },
-  { value: "0", label: "tarefas perdidas em zonas sem sinal" },
-  { value: "100%", label: "marca, fluxos e permissoes por tenant" },
+  { value: "70%", label: "menos retrabalho em campo" },
+  { value: "100%", label: "execucoes auditadas automaticamente" },
+  { value: "0", label: "relatorios manuais necessarios" },
 ];
 
 const checklistItems = [
-  { label: "Inspecao de equipamentos EPI", done: true },
-  { label: "Verificacao de pressao hidraulica", done: true },
-  { label: "Registro fotografico do local", done: true },
-  { label: "Assinatura do responsavel", done: false },
+  { label: "Verificacao de aterramento eletrico", done: true },
+  { label: "Teste de continuidade de circuito", done: true },
+  { label: "Registro fotografico com GPS", done: true },
+  { label: "Assinatura do responsavel tecnico", done: false },
   { label: "Relatorio de nao conformidade", done: false },
 ];
 
@@ -67,47 +67,47 @@ export default function Hero() {
       {/* Spacer exato da navbar fixa */}
       <div className="h-[4.75rem] shrink-0" />
 
-      <div className="relative z-10 flex flex-1 items-center py-12 sm:py-20 lg:py-28">
+      <div className="relative z-10 flex flex-1 items-center py-8 sm:py-12 lg:py-10">
         <div className="shell px-4 sm:px-6">
-          <div className="hero-layout grid items-center gap-10 xl:gap-14 lg:grid-cols-[minmax(0,0.98fr)_minmax(340px,0.74fr)]">
+          <div className="hero-layout grid items-center gap-8 xl:gap-12 lg:grid-cols-[minmax(0,0.98fr)_minmax(340px,0.74fr)]">
             {/* LEFT — copy */}
             <div className="hero-copy max-w-[43rem]">
               <motion.div
                 initial={{ opacity: 0, y: -16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="mb-6 max-w-full eyebrow sm:mb-8"
+                className="mb-4 max-w-full eyebrow sm:mb-5"
               >
                 <span className="h-2 w-2 rounded-full bg-[#22c55e] shadow-[0_0_10px_rgba(34,197,94,0.6)]" />
-                Plataforma para operacoes criticas em campo
+                Sistema de auditoria e controle para equipes de campo
               </motion.div>
 
               <motion.h1
-                className="hero-title max-w-[11ch] text-[2.95rem] font-semibold leading-[0.94] tracking-[-0.055em] text-[#0f172a] sm:max-w-[13.2ch] sm:text-[4.4rem] lg:text-[6rem] xl:text-[6.8rem]"
+                className="hero-title max-w-[14ch] text-[2.4rem] font-semibold leading-[0.96] tracking-[-0.05em] text-[#0f172a] sm:text-[3.2rem] lg:text-[3.8rem] xl:text-[4.4rem]"
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                Gestao de campo
+                Garanta que o trabalho em campo
                 <span className="block gradient-text">
-                  mais clara e profissional.
+                  foi realmente executado.
                 </span>
               </motion.h1>
 
               <motion.p
-                className="hero-description mt-5 max-w-[34rem] text-[1rem] leading-8 text-[#5f7469] sm:mt-7 sm:max-w-[38rem] sm:text-[1.1rem] sm:leading-[1.85] lg:text-[1.22rem]"
+                className="hero-description mt-3 max-w-[34rem] text-[0.95rem] leading-7 text-[#5f7469] sm:mt-4 sm:max-w-[38rem] sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Checklists offline-first, aplicativo whitelabel e acompanhamento
-                em tempo real para equipes que precisam operar bem no campo e
-                transmitir mais confianca para clientes e gestores.
+                Validacao automatica de execucao, registro com evidencia fotografica e
+                localizacao, alertas de inconsistencia e visibilidade total da operacao
+                — tudo em tempo real para gestores e auditores.
               </motion.p>
 
               {/* Stats antes dos CTAs */}
               <motion.div
-                className="hero-stats mt-8 hidden gap-3 sm:grid sm:grid-cols-3 lg:mt-10"
+                className="hero-stats mt-5 hidden gap-3 sm:grid sm:grid-cols-3 lg:mt-6"
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -115,12 +115,12 @@ export default function Hero() {
                 {trustBadges.map((badge) => (
                   <div
                     key={badge.label}
-                    className="panel-dark hero-stat-card rounded-[24px] p-4 sm:p-5"
+                    className="panel-dark hero-stat-card rounded-[20px] p-3 sm:p-4"
                   >
-                    <div className="text-[1.7rem] font-semibold text-[#166534] sm:text-[1.85rem]">
+                    <div className="text-[1.45rem] font-semibold text-[#166534] sm:text-[1.6rem]">
                       {badge.value}
                     </div>
-                    <p className="mt-1.5 text-sm leading-6 text-[#5f7469]">
+                    <p className="mt-1 text-xs leading-5 text-[#5f7469]">
                       {badge.label}
                     </p>
                   </div>
@@ -128,28 +128,28 @@ export default function Hero() {
               </motion.div>
 
               <motion.div
-                className="hero-actions mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center"
+                className="hero-actions mt-5 flex flex-col gap-3 sm:mt-6 sm:flex-row sm:items-center"
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.45 }}
               >
                 <a
-                  href="#pricing"
+                  href="#cta"
                   className="primary-button w-full text-base sm:w-auto"
                 >
-                  Solicitar demo guiada
+                  Solicitar demonstracao
                   <span aria-hidden="true">→</span>
                 </a>
                 <a
                   href="#how-it-works"
                   className="secondary-button w-full text-base sm:w-auto"
                 >
-                  Ver experiencia de uso
+                  Ver como funciona
                 </a>
               </motion.div>
             </div>
 
-            {/* RIGHT — checklist card */}
+            {/* RIGHT — audit card */}
             <motion.div
               className="panel-dark hero-panel relative self-start justify-self-stretch overflow-hidden rounded-[28px] p-5 sm:justify-self-end sm:rounded-[32px] sm:p-7 lg:max-w-md xl:max-w-120 lg:-mt-8 xl:-mt-12"
               initial={{ opacity: 0, x: 28 }}
@@ -161,21 +161,21 @@ export default function Hero() {
                 {/* Header do card */}
                 <div className="mb-4 flex items-center justify-between gap-3 sm:mb-5">
                   <div>
-                    <p className="stat-kicker">Execucao em campo</p>
+                    <p className="stat-kicker">Auditoria em campo</p>
                     <h2 className="mt-1.5 max-w-[12ch] text-[1.15rem] font-semibold leading-tight text-[#0f172a] sm:text-[1.35rem]">
-                      Checklist de Inspecao
+                      Inspecao Eletrica
                     </h2>
                     <p className="mt-0.5 text-[11px] text-[#6b7f73] sm:text-xs">
-                      Tecnico: Rafael Souza · Unidade Norte
+                      Tecnico: Rafael Souza · Subestacao Norte
                     </p>
                   </div>
                   <div className="flex flex-col items-end gap-2">
                     <div className="flex items-center gap-1.5 rounded-full border border-[#22c55e]/20 bg-[#22c55e]/10 px-2.5 py-1 text-[10px] font-semibold tracking-[0.12em] text-[#15803d] uppercase sm:px-3 sm:text-[11px] sm:tracking-[0.14em]">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#22c55e] shadow-[0_0_6px_#22c55e]" />
-                      offline
+                      auditando
                     </div>
                     <p className="text-[10px] text-[#6b7f73]">
-                      sem sinal — 3 itens salvos
+                      3 itens validados
                     </p>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ export default function Hero() {
                 {/* Progress bar */}
                 <div className="mb-4 sm:mb-5">
                   <div className="mb-2 flex items-center justify-between text-xs text-[#6b7f73]">
-                    <span>Progresso</span>
+                    <span>Progresso da auditoria</span>
                     <span className="font-semibold text-[#0f172a]">
                       3 / 5 itens
                     </span>
@@ -252,13 +252,13 @@ export default function Hero() {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    Sincronizara automaticamente ao recuperar sinal
+                    Inconsistencia detectada — alerta enviado ao gestor
                   </div>
-                  <span className="ml-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#15803d]/70">
-                    pendente
+                  <span className="ml-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#ef4444]/80">
+                    alerta
                   </span>
                 </div>
               </div>
