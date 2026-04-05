@@ -4,10 +4,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const trustBadges = [
-  "LGPD ready",
+  "14 dias gratis",
+  "Sem cartao de credito",
   "Setup em 24h",
-  "Whitelabel completo",
-  "14 dias para avaliar",
+  "LGPD ready",
 ];
 
 export default function CTA() {
@@ -42,7 +42,7 @@ export default function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Se a operacao precisa parecer mais madura, a interface tambem precisa subir de nivel
+            Veja na pratica como sua equipe passa a operar com controle real
           </motion.h2>
 
           <motion.p
@@ -52,7 +52,9 @@ export default function CTA() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Vamos montar um piloto com sua marca, seus fluxos e um roteiro claro para mostrar valor rapidamente para clientes e equipe interna.
+            Em uma demonstracao guiada, mostramos como o sistema valida execucoes,
+            detecta inconsistencias e gera visibilidade total para gestores — com os
+            seus proprios fluxos operacionais.
           </motion.p>
 
           <motion.div
@@ -64,7 +66,7 @@ export default function CTA() {
           >
             {submitted ? (
               <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-emerald-300/40 bg-emerald-50 px-8 py-4 text-base font-semibold text-emerald-700">
-                Solicitação recebida. Entraremos em contato em breve.
+                Solicitacao recebida. Entraremos em contato em breve.
               </div>
             ) : (
               <form
@@ -78,12 +80,12 @@ export default function CTA() {
                   type="email"
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
-                  placeholder="seu@email.com"
+                  placeholder="seu@empresa.com"
                   required
                   className="flex-1 rounded-full border border-emerald-900/10 bg-white px-6 py-4 text-sm font-medium text-[#0f172a] placeholder:text-[#9dafb8] outline-none focus:border-[#22c55e]"
                 />
                 <button type="submit" className="primary-button w-full whitespace-nowrap text-sm sm:w-auto">
-                  Solicitar demo
+                  Agendar demonstracao
                 </button>
               </form>
             )}

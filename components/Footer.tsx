@@ -39,7 +39,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="mb-6 text-sm leading-7 text-[#5f7469]">
-              Plataforma offline-first e white label para transformar operacoes de campo em uma experiencia mais profissional, rastreavel e confiavel.
+              Sistema de auditoria e controle inteligente para equipes de campo. Valide execucoes, registre evidencias e elimine o risco operacional da sua empresa.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
@@ -77,7 +77,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2 text-xs text-[#5f7469]">
             <span className="h-2 w-2 rounded-full bg-[#22c55e] shadow-[0_0_12px_rgba(34,197,94,0.35)]" />
-            Operacao pronta para campo e escritorio
+            Auditoria e controle para operacoes de campo
           </div>
         </div>
       </div>

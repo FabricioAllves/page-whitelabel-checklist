@@ -5,31 +5,31 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    emoji: "🏢",
-    title: "Empresa configura",
+    emoji: "🗂️",
+    title: "Crie tarefas e checklists de controle",
     description:
-      "Marca, acessos, templates e regras operacionais ficam centralizados no painel sem depender de time tecnico.",
+      "Configure os padroes operacionais da sua empresa: etapas obrigatorias, criterios de validacao, campos de evidencia e regras de conformidade.",
   },
   {
     number: "02",
     emoji: "👷",
-    title: "Tecnico recebe a tarefa",
+    title: "Equipe executa no campo",
     description:
-      "No app, a equipe visualiza o que precisa fazer, mesmo em area remota e sem sinal disponivel.",
+      "O tecnico acessa a tarefa no app, segue o fluxo guiado, registra fotos, GPS e assina digitalmente — mesmo sem sinal de internet.",
   },
   {
     number: "03",
-    emoji: "📋",
-    title: "Executa no campo",
+    emoji: "✅",
+    title: "Sistema valida e alerta inconsistencias",
     description:
-      "Checklist, foto, GPS e evidencias entram no fluxo com clareza, rastreabilidade e menos margem para erro.",
+      "Cada etapa e validada automaticamente. Desvios do padrao geram alertas em tempo real para o gestor, com evidencia e localizacao do problema.",
   },
   {
     number: "04",
-    emoji: "✅",
-    title: "Sincroniza e gera insight",
+    emoji: "📊",
+    title: "Gestor audita e decide com dados",
     description:
-      "Assim que a conexao volta, a operacao sobe para o dashboard e vira decisao em tempo real para o gestor.",
+      "O dashboard consolida tudo: status por equipe, indicadores de conformidade, historico auditavel e relatorios prontos para apresentar.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function HowItWorks() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Fluxo operacional
+            Como funciona
           </motion.p>
           <motion.h2
             className="mb-4 text-4xl font-semibold tracking-[-0.04em] text-[#0f172a] sm:text-5xl"
@@ -54,7 +54,8 @@ export default function HowItWorks() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Da configuracao ao insight, sem quebrar o ritmo da equipe
+            Do planejamento a auditoria,{" "}
+            <span className="gradient-text">sem lacuna no controle</span>
           </motion.h2>
           <motion.p
             className="mx-auto max-w-2xl text-[17px] leading-8 text-[#55657e]"
@@ -63,7 +64,8 @@ export default function HowItWorks() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Cada etapa foi desenhada para reduzir friccao no campo e aumentar a clareza gerencial no escritorio.
+            Cada etapa foi desenhada para garantir que o que foi planejado
+            foi realmente executado — com evidencia, rastro e visibilidade total.
           </motion.p>
         </div>
 
@@ -74,7 +76,7 @@ export default function HowItWorks() {
               style={{
                 width: "75%",
                 background:
-                  "linear-gradient(90deg, transparent, rgba(244,184,96,0.22) 15%, rgba(94,234,212,0.28) 50%, rgba(255,255,255,0.2) 85%, transparent)",
+                  "linear-gradient(90deg, transparent, rgba(34,197,94,0.22) 15%, rgba(22,163,74,0.28) 50%, rgba(255,255,255,0.2) 85%, transparent)",
               }}
             />
           </div>
@@ -95,13 +97,13 @@ export default function HowItWorks() {
                   </div>
                   <div
                     className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-[#08111d]"
-                    style={{ background: "linear-gradient(135deg, #fff2c5, #f4b860)" }}
+                    style={{ background: "linear-gradient(135deg, #bbf7d0, #22c55e)" }}
                   >
                     {i + 1}
                   </div>
                 </div>
 
-                <div className="mb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#f4b860]">
+                <div className="mb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#16a34a]">
                   Passo {step.number}
                 </div>
                 <h3 className="mb-3 text-xl font-semibold text-[#0f172a]">{step.title}</h3>
@@ -120,8 +122,8 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <a href="#pricing" className="secondary-button text-sm">
-            Comecar agora <span>→</span>
+          <a href="#cta" className="secondary-button text-sm">
+            Agendar demonstracao <span>→</span>
           </a>
         </motion.div>
       </div>

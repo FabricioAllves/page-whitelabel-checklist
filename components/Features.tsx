@@ -5,59 +5,59 @@ import { motion } from "framer-motion";
 const features = [
   {
     eyebrow: "01",
-    title: "Offline como requisito, nao como detalhe",
+    title: "Validacao automatica de execucao",
     description:
-      "A equipe executa sem depender de rede. Quando o sinal reaparece, a sincronizacao acontece sem ruído operacional.",
+      "O sistema verifica se cada etapa foi concluida corretamente, com base em regras definidas. Sem validacao manual, sem margem para omissao.",
     accent: "#16a34a",
   },
   {
     eyebrow: "02",
-    title: "Whitelabel com acabamento de produto proprio",
+    title: "Registro com evidencia fotografica e GPS",
     description:
-      "Marca, cores, permissoes e experiencia adaptadas por tenant para reforcar valor e credibilidade diante do cliente final.",
-    accent: "#f4b860",
-  },
-  {
-    eyebrow: "03",
-    title: "Checklists que orientam execucao de verdade",
-    description:
-      "Campos condicionais, foto, GPS, assinatura e validacoes para reduzir erro humano e padronizar a operacao.",
+      "Cada atividade e documentada com foto, localizacao e timestamp. A prova de execucao fica vinculada ao registro — imutavel e auditavel.",
     accent: "#15803d",
   },
   {
-    eyebrow: "04",
-    title: "Visibilidade executiva em tempo real",
+    eyebrow: "03",
+    title: "Alertas automaticos de inconsistencia",
     description:
-      "Gestores deixam de esperar planilhas no fim do dia e passam a enxergar status, risco e produtividade em tempo real.",
+      "Quando algo foge do padrao esperado, o sistema alerta o gestor em tempo real. O erro e identificado antes de virar retrabalho ou incidente.",
+    accent: "#ef4444",
+  },
+  {
+    eyebrow: "04",
+    title: "Dashboard com visibilidade total da operacao",
+    description:
+      "Gestores deixam de esperar planilhas no fim do dia. Status por equipe, regiao e tecnico ficam visiveis em tempo real, com filtros e indicadores.",
     accent: "#166534",
   },
   {
     eyebrow: "05",
-    title: "Controle fino de acesso por perfil",
+    title: "Auditoria automatica e trilha de evidencias",
     description:
-      "Admin, gestor, tecnico e auditor enxergam apenas o que precisam, com governanca mais clara e menos risco de operacao.",
-    accent: "#4ade80",
-  },
-  {
-    eyebrow: "06",
-    title: "Sincronizacao resiliente entre campo e central",
-    description:
-      "Fluxo bidirecional de dados com menos retrabalho, menos conflito e mais confianca no que chega ao dashboard.",
-    accent: "#22c55e",
-  },
-  {
-    eyebrow: "07",
-    title: "CAPA — Acoes Corretivas e Preventivas",
-    description:
-      "Nao conformidades viram planos de acao rastreavies com responsavel, prazo e evidencia de resolucao. Ciclo fechado sem e-mail nem planilha.",
+      "Cada acao e registrada com responsavel, horario e localizacao. Auditorias internas e externas se tornam simples, rapidas e inquestaveis.",
     accent: "#0f766e",
   },
   {
-    eyebrow: "08",
-    title: "Assinatura digital e evidencia juridica",
+    eyebrow: "06",
+    title: "Nao conformidades viram planos de acao",
     description:
-      "Tecnico, supervisor e cliente assinam diretamente no app. O registro fica vinculado ao checklist com timestamp, GPS e hash de integridade.",
-    accent: "#059669",
+      "Inconsistencias detectadas se convertem automaticamente em planos CAPA — com responsavel, prazo e evidencia de resolucao. Ciclo fechado.",
+    accent: "#f97316",
+  },
+  {
+    eyebrow: "07",
+    title: "Controle fino por equipe, regiao e perfil",
+    description:
+      "Gestor, tecnico e auditor enxergam apenas o que precisam. Permissoes granulares garantem governanca sem comprometer a agilidade operacional.",
+    accent: "#4ade80",
+  },
+  {
+    eyebrow: "08",
+    title: "Relatorios que se geram automaticamente",
+    description:
+      "O sistema consolida dados de campo em relatorios estruturados, prontos para compartilhar com clientes, diretoria ou orgaos reguladores.",
+    accent: "#22c55e",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function Features() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Arquitetura do produto
+            Como o sistema resolve
           </motion.p>
           <motion.h2
             className="mb-4 text-4xl font-semibold tracking-[-0.04em] text-[#152033] sm:text-5xl"
@@ -83,8 +83,8 @@ export default function Features() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Recursos desenhados para uma operacao{" "}
-            <span className="gradient-text">critica e sofisticada</span>
+            Controle e auditoria{" "}
+            <span className="gradient-text">de ponta a ponta</span>
           </motion.h2>
           <motion.p
             className="mx-auto max-w-2xl text-[17px] leading-8 text-[#55657e]"
@@ -93,7 +93,8 @@ export default function Features() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Em vez de empilhar features soltas, a plataforma organiza o trabalho de ponta a ponta e melhora a percepcao de maturidade do seu produto.
+            Cada recurso foi desenhado para eliminar uma fonte especifica de erro,
+            risco ou falta de visibilidade nas operacoes de campo.
           </motion.p>
         </div>
 

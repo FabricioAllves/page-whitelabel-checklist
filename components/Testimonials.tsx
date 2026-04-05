@@ -5,26 +5,26 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Antes perdíamos dados toda vez que o técnico ia para área sem sinal. Com o CheckField, tudo sincroniza automaticamente quando ele volta. Simplesmente funcionou do primeiro dia.",
-    name: "Carlos Mendonça",
-    role: "Gerente de Operações",
-    company: "Energisa Distribuição",
+      "Antes nao sabiamos se o servico tinha sido feito ate o cliente ligar reclamando. Hoje o sistema detecta a inconsistencia em tempo real e o gestor age antes de virar problema.",
+    name: "Carlos Mendonca",
+    role: "Gerente de Operacoes",
+    company: "Energisa Distribuicao",
     avatar: "CM",
     avatarColor: "#16a34a",
   },
   {
     quote:
-      "O whitelabel foi decisivo. Nossos clientes veem o nosso app, com nossa identidade visual. A plataforma cresceu junto com a gente e continuou parecendo produto premium.",
+      "Reduzimos o retrabalho em mais de 60% no primeiro trimestre. A validacao automatica eliminou os erros de preenchimento que antes eram descobertos so na auditoria mensal.",
     name: "Renata Oliveira",
-    role: "Diretora de Tecnologia",
+    role: "Gerente de Qualidade",
     company: "Sanepar Infraestrutura",
     avatar: "RO",
     avatarColor: "#15803d",
   },
   {
     quote:
-      "O dashboard em tempo real mudou a forma como gerenciamos. Antes esperávamos planilhas no final do dia. Agora vejo o status de cada técnico no mapa, ao vivo.",
-    name: "Fábio Rodrigues",
+      "O dashboard mudou a forma como gerenciamos. Antes esperavamos planilhas no fim do dia. Hoje vejo o status de cada tecnico em tempo real, com evidencia fotografica e localizacao.",
+    name: "Fabio Rodrigues",
     role: "Supervisor de Campo",
     company: "Copel Engenharia",
     avatar: "FR",
@@ -52,7 +52,7 @@ export default function Testimonials() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            O produto impressiona porque resolve e porque parece serio
+            Controle que muda a operacao — na pratica
           </motion.h2>
         </div>
 

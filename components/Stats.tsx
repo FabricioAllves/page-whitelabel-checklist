@@ -10,10 +10,38 @@ import {
 import { useEffect, useRef } from "react";
 
 const stats = [
-  { value: 500, prefix: "+", suffix: "", label: "tecnicos ativos", description: "rodando tarefas diariamente", color: "#16a34a" },
-  { value: 99.9, prefix: "", suffix: "%", label: "disponibilidade offline", description: "mesmo em operacoes sem cobertura", color: "#5eead4" },
-  { value: 2, prefix: "< ", suffix: "s", label: "tempo de sincronizacao", description: "quando a conectividade retorna", color: "#15803d" },
-  { value: 100, prefix: "", suffix: "%", label: "branding por tenant", description: "para produto white label serio", color: "#166534" },
+  {
+    value: 70,
+    prefix: "",
+    suffix: "%",
+    label: "reducao de retrabalho",
+    description: "menos servicos refeitos apos implantacao do controle sistematizado",
+    color: "#16a34a",
+  },
+  {
+    value: 100,
+    prefix: "",
+    suffix: "%",
+    label: "execucoes auditadas",
+    description: "cada tarefa documentada com evidencia, GPS e responsavel identificado",
+    color: "#15803d",
+  },
+  {
+    value: 3,
+    prefix: "",
+    suffix: "x",
+    label: "mais velocidade em relatorios",
+    description: "relatorios de conformidade gerados automaticamente, sem esforco manual",
+    color: "#0f766e",
+  },
+  {
+    value: 0,
+    prefix: "",
+    suffix: "",
+    label: "relatorios manuais",
+    description: "tudo registrado e consolidado diretamente pelo sistema em campo",
+    color: "#166534",
+  },
 ];
 
 function AnimatedNumber({
@@ -30,7 +58,7 @@ function AnimatedNumber({
   const motionValue = useMotionValue(0);
   const spring = useSpring(motionValue, { duration: 1200, bounce: 0 });
   const display = useTransform(spring, (v) =>
-    value === 99.9 ? `${prefix}${v.toFixed(1)}${suffix}` : `${prefix}${Math.round(v)}${suffix}`
+    `${prefix}${Math.round(v)}${suffix}`
   );
 
   useEffect(() => {
@@ -53,7 +81,7 @@ export default function Stats() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            Prova operacional
+            Resultados comprovados
           </motion.p>
           <motion.h2
             className="text-4xl font-semibold tracking-[-0.04em] text-[#152033] sm:text-5xl"
@@ -62,7 +90,8 @@ export default function Stats() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Numeros que reforcam confianca
+            Controle que se traduz em{" "}
+            <span className="gradient-text">resultado de negocio</span>
           </motion.h2>
         </div>
 
